@@ -1,0 +1,92 @@
+/* AppointmentPage.css */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+.appointment-page {
+  font-family: 'Inter', sans-serif;
+  padding: 4rem 2rem;
+  background-color: var(--light-bg);
+  min-height: 100vh;
+}
+
+.appointment-page h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: #222;
+}
+
+.appointment-form {
+  max-width: 600px;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 12px;
+  padding: 2.5rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.field-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5rem;
+}
+
+.field-group label {
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: #333;
+}
+
+.field-group input,
+.field-group select,
+.field-group textarea {
+  padding: 0.75rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+.field-group-inline {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.field-group-inline > div {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.btn-cancel,
+.btn-submit {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  border: none;
+}
+
+.btn-cancel {
+  background: #ccc;
+  color: #333;
+}
+
+.btn-submit {
+  background-color: #38453C;
+  color: #fff;
+  transition: background-color 0.2s ease;
+}
+
+.btn-submit:hover {
+  background-color: #282d2a;
+}

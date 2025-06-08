@@ -1,29 +1,25 @@
 import React from "react";
 import "./AboutUs2.css";
 import bikeImage from './bike-image.png'; 
+import repairImage from './repair-image.jpg';
 import bikeTerrainImage from './bike-on-terrain.jpg'; 
+import cycleImage from './cycle-image.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faWrench, faCog, faBicycle } from '@fortawesome/free-solid-svg-icons';
+import { faWrench, faCog, faBicycle } from '@fortawesome/free-solid-svg-icons';  
 
 export default function AboutUs2() {
   return (
     <div className="aboutus-container">
-      <header className="navbar">
-        <div className="logo">RIDEZ</div>
-        <ul className="nav-links">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Book Appointment</a></li>
-          <li><a href="#">Contact Us</a></li>
-        </ul>
-      </header>
-
       <section className="hero">
         <div className="hero-content">
           <img src={bikeImage} alt="Bike" className="hero-image" />
           <div className="hero-text">
-            <h1>The Best Bicycling Experience</h1>
-            <p>Providing the best bikes and services for your cycling needs.</p>
-            <button className="orange-button">Learn More</button>
+            <h1>Ride with Confidence</h1>
+            <p>
+              Comprehensive tune-ups, expert repairs<br/>
+              and rapid turnaround to keep you rolling.
+            </p>
+            <button className="orange-button">Book My Tune-Up</button>
           </div>
         </div>
       </section>
@@ -51,13 +47,17 @@ export default function AboutUs2() {
 
       <section className="story">
         <div className="story-image">
-          <img src={bikeTerrainImage} alt="Mechanic" />
+          <img src={cycleImage} alt="Mechanic" />
         </div>
         <div className="story-text">
           <h2>A Humble Beginning</h2>
-          <p>In 2012, our founders, <a href="/aboutDesigners.js"> Kairly Tawk and Suhas Chimmapudi </a>, turned their backyard garage into a one-man workshop fixing flats and tuning friends’ bikes. Word spread fast: riders loved their meticulous attention to detail and genuine passion for cycling.
-
-What started as weekend tune-ups has grown into CycleFix a full-service bike repair shop in Asheville, NC serving thousands of cyclists each year. From our first humble workbench to our state-of-the-art service center today, we’ve never lost sight of why we started: keeping you rolling safely and smoothly on two wheels.</p>
+  <p>In this crisp close-up, Kairly’s hands tighten the rear derailleur<br/> on a road bike clamped to
+  a makeshift stand as Suhas holds the<br/> wheel steady. Sunlight through the garage window
+  highlights the<br/> worn tool bench and scuffed frame as they fine-tune each gear<br/> together.
+    With only a borrowed kitchen workbench, a screwdriver,<br/> and weekend afternoons, they
+    perfected smooth shifting on twenty<br/> friends’ bikes by summer’s end. That collaborative
+    moment—one<br/> precise screw turn at a time—sparked what would become BikeFixers.
+  </p>
         </div>
       </section>
 
