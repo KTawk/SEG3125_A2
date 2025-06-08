@@ -1,8 +1,12 @@
 // src/AppointmentPage.jsx
 import React, { useState } from 'react';
 import './AppointmentPage.css';
+import Navbar from './components/Navbar.js';
+import { useNavigate } from 'react-router-dom';
+import Footer from './components/Footer.js';
 
 export default function AppointmentPage() {
+  const navigate = useNavigate();
   const [form, setForm] = useState({
     firstName: '',
     lastName: '',
@@ -20,14 +24,17 @@ export default function AppointmentPage() {
   };
 
   const handleSubmit = (e) => {
-    e.preventDefault();
-    // TODO: send to your backend / API
-    console.log('Booking request:', form);
-    alert('Appointment submitted!');
-  };
+  e.preventDefault();
+  // Proceed with submission if valid
+  console.log('Booking request:', form);
+  navigate('/appointment-confirmation');
+
+};
 
   return (
-    <div className="appointment-page">
+    <div className="appointment-page-wrapper">
+      <Navbar />
+      <div className="appointment-page">
       <h1>Book an Appointment</h1>
       <form className="appointment-form" onSubmit={handleSubmit}>
         <div className="field-group">
@@ -128,6 +135,8 @@ export default function AppointmentPage() {
           </button>
         </div>
       </form>
+      </div>
+      <Footer />
     </div>
   );
 }

@@ -1,7 +1,13 @@
 /* AppointmentPage.css */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
 
+.appointment-page-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
 .appointment-page {
+  flex: 1;
   font-family: 'Inter', sans-serif;
   padding: 4rem 2rem;
   background-color: var(--light-bg);
@@ -61,7 +67,7 @@
 
 .form-actions {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   gap: 1rem;
   margin-top: 1rem;
 }

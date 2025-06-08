@@ -6,10 +6,18 @@ import bikeTerrainImage from './bike-on-terrain.jpg';
 import cycleImage from './cycle-image.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faWrench, faCog, faBicycle } from '@fortawesome/free-solid-svg-icons';  
-
+import Navbar from './components/Navbar.js';
+import { useNavigate } from 'react-router-dom';
+import Footer from './components/Footer.js';
 export default function AboutUs2() {
+  const navigate = useNavigate();
+  const handleClick = () => {
+    navigate('/appointment-page');
+  };
+
   return (
     <div className="aboutus-container">
+      <Navbar />
       <section className="hero">
         <div className="hero-content">
           <img src={bikeImage} alt="Bike" className="hero-image" />
@@ -19,7 +27,7 @@ export default function AboutUs2() {
               Comprehensive tune-ups, expert repairs<br/>
               and rapid turnaround to keep you rolling.
             </p>
-            <button className="orange-button">Book My Tune-Up</button>
+            <button className="orange-button" onClick={handleClick}>Book My Tune-Up</button>
           </div>
         </div>
       </section>
@@ -61,7 +69,7 @@ export default function AboutUs2() {
         </div>
       </section>
 
-      <div className="contact-form-container">
+    <div className="contact-form-container" id="contact">
       <h2>Get in Touch</h2>
       <form className="contact-form">
         <label htmlFor="name">Name</label>
@@ -77,25 +85,7 @@ export default function AboutUs2() {
       </form>
     </div>
 
-      <footer className="footer">
-        <div className="footer-boxes">
-          <div className="footer-box">
-            <h4>More about the designers</h4>
-            <a href="/aboutDesigners.js">
-            <p>Kairly and Suhas</p>
-            </a>
-          </div>
-          <div className="footer-box">
-            <h4>Call Us</h4>
-            <p>666 - 880 - 33388</p>
-          </div>
-          <div className="footer-box">
-            <h4>Location</h4>
-            <p>145 Jackson Blvd, Ontario, F7G123</p>
-          </div>
-        </div>
-        <p className="footer-bottom">© 2025 BikeFixers. All Rights Reserved.</p>
-      </footer>
+    <Footer />
     </div>
   );
 } 
