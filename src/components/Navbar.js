@@ -8,7 +8,7 @@ export default function Navbar() {
 
   return (
     <nav className="navbar">
-      <div className="logo">RIDEZ</div>
+      <div className="logo">BIKE FIXERS</div>
       <ul className="nav-links">
         <li><Link to="/">Home</Link></li>
         <li><Link to="/appointment-page" >Book Appointment</Link></li>

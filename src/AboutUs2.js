@@ -55,7 +55,7 @@ export default function AboutUs2() {
 
       <section className="story">
         <div className="story-image">
-          <img src={cycleImage} alt="Mechanic" />
+          <img src={repairImage} alt="Mechanic" />
         </div>
         <div className="story-text">
           <h2>A Humble Beginning</h2>

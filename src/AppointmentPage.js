@@ -27,7 +27,15 @@ export default function AppointmentPage() {
   e.preventDefault();
   // Proceed with submission if valid
   console.log('Booking request:', form);
-  navigate('/appointment-confirmation');
+  navigate('/appointment-confirmation', {
+   state: {
+     firstName: form.firstName,
+     lastName:  form.lastName,
+     serviceType: form.serviceType,
+     date: form.date,
+     time: form.time
+   }
+ });
 
 };
 

@@ -1,0 +1,70 @@
+/* src/ConfirmationPage.css */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+/* AppointmentConfirmation.css */
+
+.confirm-page {
+  /* center it in the viewport */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 2rem;
+  min-height: 100vh;
+  background-color: var(--light-bg);
+}
+
+.confirm-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  padding: 4rem;               /* more room inside */
+  max-width: 700px;            /* wider container */
+  width: 100%;
+  text-align: center;
+}
+
+/* Headline */
+.confirm-card h1 {
+  font-size: 2.5rem;           /* larger thank-you */
+  margin-bottom: 1rem;
+}
+
+/* Subtext */
+.confirm-card p {
+  font-size: 1.125rem;         /* slightly bigger body copy */
+  margin-bottom: 2rem;
+  color: #555;
+}
+
+.confirm-details {
+  text-align: center;       /* center each line */
+  margin: 1.5rem 0;         /* space above & below */
+}
+
+.confirm-details p {
+  margin: 0.4rem 0;         /* tighter vertical rhythm */
+  font-size: 1rem;
+  color: #333;
+}
+
+/* separate block for the button so it appears below the details */
+.confirm-action {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+
+.btn-back {
+  display: inline-block;    /* shrink‐wrap */
+  padding: 1rem 2rem;
+  background-color: #38453C;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.2s ease;
+}
+
+.btn-back:hover {
+  background-color: #282d2a;
+}
