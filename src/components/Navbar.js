@@ -12,7 +12,8 @@ export default function Navbar() {
       <ul className="nav-links">
         <li><Link to="/">Home</Link></li>
         <li><Link to="/appointment-page" >Book Appointment</Link></li>
-        <li><Link to="/#contact">Contact Us</Link></li>
+        <li><a href="/#contact">Contact Us</a></li>
+        <li><Link to="/about-designers">Designed By</Link></li>
       </ul>
     </nav>
   );
